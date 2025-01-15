@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   android:orientation="vertical"
+   android:padding="16dp">
+
+   <ImageView
+       android:id="@+id/listing_image"
+       android:layout_width="match_parent"
+       android:layout_height="200dp"
+       android:layout_marginTop="20dp"
+       android:scaleType="centerCrop"
+       android:contentDescription="Listing Image" />
+
+
+    <TextView
+    android:id="@+id/listing_name"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="32sp"
+    android:textStyle="bold"
+    android:layout_marginTop="16dp"
+    android:text="Listing Name" />
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginTop="16dp">
+
+       <TextView
+           android:id="@+id/price"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:textSize="24sp"
+           android:textStyle="bold" />
+
+       <TextView
+           android:id="@+id/seller_name"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:textAlignment="textEnd"
+           android:textSize="24sp" 
+           android:textStyle="bold" />
+   </LinearLayout>
+
+   <TextView
+       android:id="@+id/description"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="16dp"
+       android:textSize="16sp" />
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="24dp"
+       android:text="Select Rental Period"
+       android:textStyle="bold"
+       android:textSize="18sp" />
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginTop="8dp">
+
+       <Button
+           android:id="@+id/start_date_button"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:backgroundTint="@color/logoText"
+           android:layout_marginEnd="8dp"
+           android:text="Select Start Date" />
+
+       <Button
+           android:id="@+id/end_date_button"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:backgroundTint="@color/logoText"
+           android:layout_marginStart="8dp"
+           android:text="Select End Date" />
+   </LinearLayout>
+
+   <TextView
+       android:id="@+id/selected_dates"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="16dp"
+       android:layout_marginBottom="16dp"
+       android:padding="12dp"
+       android:background="#F5F5F5"
+       android:textSize="16sp" />
+
+   <Space
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1" />
+
+   <Button
+       android:id="@+id/make_offer_button"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:backgroundTint="@color/logoText"
+       android:layout_marginTop="16dp"
+       android:text="Make Offer"
+       android:textSize="18sp"
+       android:padding="12dp" />
+
+</LinearLayout>

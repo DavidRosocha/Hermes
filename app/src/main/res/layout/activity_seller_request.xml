@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:id="@+id/main">
+
+    <TextView
+        android:id="@+id/requestAcbanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Requests"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:padding="20sp"
+
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/noRequestsText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No Requests at the moment"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textSize="18sp"
+         />
+
+    <ListView
+        android:id="@+id/requestListView"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="1dp" />
+</LinearLayout>
