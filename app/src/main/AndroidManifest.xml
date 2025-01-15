@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Hermes"
+        tools:targetApi="31">
+
+
+        <!-- BuyerDashboard Activity -->
+        <activity
+            android:name=".activities.BuyerDashboard"
+            android:exported="false" />
+
+        <!-- SearchedItemActivity -->
+        <activity
+            android:name=".activities.SearchedItemActivity"
+            android:exported="true" />
+
+        <!-- ListingCreationForm Activity -->
+        <activity
+            android:name=".activities.SellerRequestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ListingCreationForm"
+            android:exported="true" />
+
+        <!-- SellerDashboard Activity -->
+        <activity
+            android:name=".activities.SellerDashboard"
+            android:exported="true" />
+
+        <!-- AdminDashboard Activity -->
+        <activity
+            android:name=".activities.AdminDashboard"
+            android:exported="true" />
+
+        <!-- LoadingActivity as the launcher -->
+        <activity
+            android:name=".LoadingActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- SignUpActivity -->
+        <activity
+            android:name=".activities.SignUpActivity"
+            android:exported="true" />
+
+        <!-- LoginActivity -->
+        <activity
+            android:name=".activities.LoginActivity"
+            android:exported="false" />
+
+        <!-- PostLoginActivity -->
+        <activity
+            android:name=".activities.PostLoginActivity"
+            android:exported="false" />
+
+        <!-- ListingDetailsActivity-->
+        <activity 
+            android:name=".activities.ListingDetails"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

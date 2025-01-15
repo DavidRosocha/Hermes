@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activities.ListingCreationForm">
+
+        <TextView
+            android:id="@+id/listingCreationFormTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Listing Creation"
+            android:textSize="30sp"
+            android:padding="10sp"
+
+            />
+
+        <TextView
+            android:id="@+id/listingNameText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Listing Name:"
+            android:textSize="20sp"
+            android:layout_below="@id/listingCreationFormTitle"
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/listingNameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@id/listingNameText"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/listingName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Name"
+                android:inputType="text"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/listingCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Category:"
+            android:textSize="20sp"
+            android:layout_below="@id/listingNameLayout"
+            />
+
+
+        <AutoCompleteTextView
+            android:id="@+id/categorySelector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_below="@id/listingCategory"
+            android:hint="Select a Category"
+            android:dropDownHeight="wrap_content"
+            android:completionThreshold="1"
+            android:padding="10dp"
+            />
+
+        <TextView
+            android:id="@+id/listingPriceText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Price:"
+            android:textSize="20sp"
+            android:layout_below="@id/categorySelector"
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/listingPriceLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_below="@id/listingPriceText">
+
+            <EditText
+                android:id="@+id/listingPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Price"
+                android:inputType="numberDecimal"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/listingDescriptionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description:"
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            android:layout_below="@id/listingPriceLayout"
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/listingDescriptionTextLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/listingDescriptionText"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/listingDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Description"
+                android:inputType="text"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/rentDurationText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rent Duration:"
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            android:layout_below="@id/listingDescriptionTextLayout"
+            android:paddingTop="8dp" />
+
+        <TextView
+            android:id="@+id/startDateText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start Date:"
+            android:textSize="16sp"
+            android:layout_margin="10dp"
+            android:layout_below="@id/rentDurationText"
+            android:paddingTop="4dp" />
+
+        <Button
+            android:id="@+id/startDateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/startDateText"
+            android:backgroundTint="@color/logoText"
+            android:text="Select Start Date"
+            android:padding="8dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/endDateText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="End Date:"
+            android:textSize="16sp"
+            android:layout_below="@id/startDateButton"
+            android:paddingTop="4dp" />
+
+        <Button
+            android:id="@+id/endDateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/endDateText"
+            android:text="Select End Date"
+            android:backgroundTint="@color/logoText"
+            android:padding="8dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/listingPhotosText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Listing Photos:"
+            android:textSize="20sp"
+            android:layout_below="@id/endDateButton"
+            android:paddingTop="8dp" />
+
+        <ImageView
+            android:id="@+id/photoPreview"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_height="200dp"
+            android:layout_below="@id/listingPhotosText"
+            android:layout_margin="10dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="Selected Image Preview"
+            />
+
+        <Button
+            android:id="@+id/addPhotoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/photoPreview"
+            android:text="Add Photos"
+            android:backgroundTint="@color/logoText"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/createListingButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create Listing"
+            android:layout_below="@id/addPhotoButton"
+            android:layout_margin="16dp"
+            android:backgroundTint="@color/logoText"
+            android:textColor="@android:color/white"
+            android:padding="12dp" />
+
+        <Button
+            android:id="@+id/deleteListingButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/createListingButton"
+            android:text="Delete Listing"
+            android:layout_margin="16dp"
+            android:backgroundTint="@color/colorDisable"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:visibility="gone"/>
+    </RelativeLayout>
+</ScrollView>
